@@ -1,0 +1,40 @@
+package zombiewar;
+
+/**
+ *
+ * Malcolm Moore 12/2/22
+ */
+public class Character {
+    private int currentHealth;
+    private int startingHealth;
+    private int attackDamage;
+    private boolean isAlive;
+    
+    public int getAttackDamage(){
+        return attackDamage;
+    }
+    
+    public void setAttackDamage(int dmg){
+        this.attackDamage = dmg;
+    }
+    
+    public int getStartingHealth(){
+        return startingHealth;
+    }
+    
+    public void setStartingHealth(int hp){
+        this.startingHealth = hp;
+    }
+    
+    public int getCurrentHealth(){
+        return currentHealth;
+    }
+    
+    public void setCurrentHealth(int currentHealth){
+        this.currentHealth = currentHealth;
+    }
+    
+    private void isAlive(boolean condition){
+        this.isAlive = condition;
+    }
+}
